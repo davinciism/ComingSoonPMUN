@@ -1,0 +1,126 @@
+html, body{
+    margin: 0;
+    font-family: 'Cinzel', serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    color: #000;
+    background-color: #000;
+    background-image: url("../assets/debate.png");
+    background-size: auto 100%;
+    background-position: 25%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.overlay{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    background-color: rgba(000, 000, 000, 0.6);
+}
+#particles-js{
+    height: 100vh;
+    width: 100%;
+}
+.principal{
+    height: auto;
+    width: 100%;
+    z-index: 100;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-60%);  
+    padding: 10px;
+}
+.principal .logoIntro img{
+    height: 216px;
+    width: 100%;
+}
+.principal .logoIntro h1{
+    color: #fff;
+    font-size: 4em;
+    font-weight: black;
+    text-align: center;
+    margin: 0px auto;
+    padding: 2px;
+}
+.principal .logoIntro p{
+    font-size: 30px;
+    color: rgb(204, 200, 200);
+    width: 100%;
+    margin-top: -10px;
+    text-align: center;
+    line-height: 1.0em;
+}
+.principal .logoIntro hr{
+    background-color: #e11b01;
+    border: none;
+    width:50%;
+    height: 2px;
+    margin: 24px auto;
+}
+.principal h1{
+    margin: 0px;
+    margin-top: 20px;
+    color: rgb(58, 145, 245);
+    text-align: center;
+    font-size: 30px;
+}
+.principal button{
+    display: block;
+    width: 80%;
+    margin: 0px auto;
+    background-image: linear-gradient(90deg, #e11b01, #e15b01, #e11b01);
+    border: none;
+    border-radius: 20px;
+    font-size: 22px;
+    color: #fff; 
+}
+.principal button:hover{
+    cursor: pointer;
+    box-shadow: 4px 8px rgba(000, 000, 000, 0.6);
+}
+.bottom{
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    margin: 0px auto;
+}
+.bottom p{
+    font-size: 24px;
+    color: #fff;
+    margin: 0px;
+    text-align: center;
+}
+.bottom p span{
+    font-size: 24px;
+    color: #ff1e00;
+    font-weight: regular;
+}
+@media (min-width: 880px) {
+    body{
+        background-size: cover;
+    }
+    .principal .logoIntro{
+        width: 30%;
+        margin: 0px auto;
+        padding: 20px;
+        border-radius: 30px;
+        background-color: rgba(000, 000, 000, 0.75);
+    }
+    hr{
+        display: none;
+    }
+    #click{
+        width: 20%;
+        margin: 0px auto;
+        transform: translateY(-10px);
+    }
+    .bottom{
+        padding: 18px;
+    }
+}
