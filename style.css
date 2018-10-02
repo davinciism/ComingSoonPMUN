@@ -38,12 +38,6 @@ body{
     height: 216px;
     width: 100%;
 }
-.principal .logoIntro svg .preload{
-    -webkit-transition: none !important;
-  -moz-transition: none !important;
-  -ms-transition: none !important;
-  -o-transition: none !important;
-}
 .principal .logoIntro h1{
     color: #fff;
     font-size: 4em;
