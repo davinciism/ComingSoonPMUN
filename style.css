@@ -34,7 +34,7 @@ body{
     transform: translate(-50%,-60%);  
     padding: 10px;
 }
-.principal .logoIntro svg{
+.principal .logoIntro img{
     height: 216px;
     width: 100%;
 }
