@@ -55,7 +55,7 @@ body{
     opacity: 0.5;
     margin: 0;
     font-weight: 100;
-    color: e11b01;
+    color: #e11b01;
 }
 .white .content p{
     font-size: 24px;
@@ -137,7 +137,7 @@ body{
 }
 .principal button:hover{
     cursor: pointer;
-    box-shadow: 4px 8px rgba(000, 000, 000, 0.6);
+    box-shadow: 4px 8px rgba(0,0,0,0.6);
 }
 .bottom{
     font-family: 'Playfair Display', serif;
@@ -163,6 +163,10 @@ body{
         background-size: cover;
         overflow: hidden;
     }
+    .white .content h1{
+        font-size: 36px;
+        letter-spacing: 1.6px;
+    }
     .white .content p{
         font-size: 16px;
     }
@@ -185,7 +189,7 @@ body{
         transform: translateY(-10px);
     }
     .bottom{
-        position: relative;
+        position: fixed;
         padding: 18px;
     }
 }
