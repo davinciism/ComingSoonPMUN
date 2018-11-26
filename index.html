@@ -15,21 +15,21 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TimelineMax.min.js"></script>
 </head>
 <body id="particles-js">
-<div class="wrapper">
-        <div class="white">
-            <h1 class="countDown">0</h1>
-            <div class="content">
-                <h1>Pratik Kuril</h1>
-                <h6>USG for IT&Design</h6>
-                <p>"Lying in the gutter, aiming for the moon, tryna empty out the ocean with a spoon."</p>
-            </div>
-        </div>
-        <div class="orange"></div>
+  <div class="wrapper">
+    <div class="white">
+      <h1 class="countDown">0</h1>
+      <div class="content">
+          <h1>Pratik Kuril</h1>
+          <h6>USG for IT&Design</h6>
+          <p>"Lying in the gutter, aiming for the moon, tryna empty out the ocean with a spoon."</p>
+      </div>
     </div>
+    <div class="orange"></div>
+  </div>
   <div class="overlay" >
     <div class="principal">
       <div class="logoIntro">
-        <img class="animated fadeInUp"src="assets/phoenixMunLogo.svg" alt="Phoenix MUN Logo">
+        <img class="moveUp" src="assets/phoenixMunLogo.svg" alt="Phoenix MUN Logo">
         <div class="upAndDown">
             <h1 >phoenix</h1>
             <p class="animated flipInX" >Model United Nations</p>    
@@ -71,9 +71,10 @@
             clearInterval(i);
         }
     }, 10);
-
+    
     window.addEventListener('load', function(){
         tl.to(".wrapper", 2, {xPercent: 100, ease: Power4.easeInOut}, /*thisAnimationDelay:*/);
+        tl.to(".moveUp", 2, {opacity: 1, y: 20, }, 2);
 
     })
 
