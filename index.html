@@ -19,9 +19,9 @@
     <div class="white">
       <h1 class="countDown">0%</h1>
       <div class="content">
-          <h1>Pratik Kuril</h1>
-          <h6>USG for IT&Design</h6>
-          <p>"Lying in the gutter, aiming for the moon, tryna empty out the ocean with a spoon."</p>
+          <h1 class="name"></h1>
+          <h6 class="position"></h6>
+          <p class="quote"></p>
       </div>
     </div>
     <div class="orange"></div>
@@ -61,6 +61,23 @@
         }, 1000);
     }
     //Loader
+
+    //Data for loader
+    var names = ["Shaurya Verma", "Pratik Kuril", "Riya Sidhu", "Utkarsh Srivastava"];
+    var positions = ["Secretery General", "USG for IT&Design", "Director General", "USG for Delegate Affair"];
+    var quotes = ["Do not take life too seriously. You will never get out of it alive.",
+                "The people who are crazy enough to think they can change the wordla, are the ones that do.",
+                "Life is what happens when you’re busy making other plans.",
+                "You only live once, but if you do it right, once is enough"];
+    function getRandomInt(max){
+        return Math.floor(Math.random() * Math.floor(max));
+    }
+    var n = getRandomInt(4);
+    console.log(n);
+    $('.name').html(names[n]);
+    $('.position').html(positions[n]);
+    $('.quote').html(quotes[n]);
+
     var tl = new TimelineMax({});
     tl.to(".content", 1, {opacity:1, y: 40 });
     var counter = 0;
