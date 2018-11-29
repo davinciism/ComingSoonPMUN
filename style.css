@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel');
+@import url('https://fonts.googleapis.com/css?family=Cinzel|Playfair+Display');
 html, body{
     margin: 0;
     font-family: 'Cinzel', serif;
@@ -48,16 +50,15 @@ body{
     font-size: 36px;
     letter-spacing: 1.6px;
     text-transform: uppercase;
-
 }
 .white .content p{
     font-size: 16px;
-    opacity: 0.75;
+    opacity: 0.85;
 
 }
 .white .content h6{
     font-size: 21px;
-    opacity: 0.5;
+    opacity: 0.75;
     margin: 0;
     font-weight: 100;
     color: #e11b01;
@@ -67,6 +68,17 @@ body{
     width: 30%;
     /* background: linear-gradient(90deg, black, orangered); */
     background: #e11b01;
+    font-family: 'Playfair Display', serif;
+
+}
+.orange h1{
+    color: #fff;
+    font-size: 36px;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    float: left;
+    margin: 0;
+    letter-spacing: -20;
 }
 .overlay{
     height: 100vh;
@@ -142,10 +154,11 @@ body{
 .bottom{
     font-family: 'Playfair Display', serif;
     font-style: italic;
-    width: 100%;
+    width: 100% ;
     position: fixed;
     bottom: 0;
     margin: 0px auto;
+    transform: translateX(-18px);
 }
 .bottom p{
     font-size: 24px;

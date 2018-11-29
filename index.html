@@ -7,8 +7,6 @@
     <title>Phoenix Model United Nations || 2019</title>
     <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
@@ -24,14 +22,17 @@
           <p class="quote"></p>
       </div>
     </div>
-    <div class="orange"></div>
+    <div class="orange">
+        <h1 class="toLoad"></h1>
+        <h1 class="toLoadStuff"></h1>
+    </div>
   </div>
   <div class="overlay" >
     <div class="principal">
       <div class="logoIntro">
         <img class="moveUp" src="assets/phoenixMunLogo.svg" alt="Phoenix MUN Logo">
         <div class="upAndDown">
-            <h1 >phoenix</h1>
+            <h1 >Phoenix</h1>
             <p>Model United Nations</p>    
         </div>
         <hr>
@@ -44,10 +45,12 @@
   </div>
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script>
+
     //ParticlesJS
     particlesJS.load('particles-js', 'particles.json', function(){
       console.log('particles.json loaded...');
     });
+
     //animating on nav-clicks using jQuery
     $(function(){
         $('#click').click(function(){
@@ -60,8 +63,9 @@
             $(element).removeClass('animated '+animation);
         }, 1000);
     }
-    //Loader
 
+
+    //LOADER
     //Data for loader
     var names = ["Shaurya Verma", "Pratik Kuril", "Riya Sidhu", "Utkarsh Srivastava"];
     var positions = ["Secretery General", "USG for IT&Design", "Director General", "USG for Delegate Affair"];
@@ -69,6 +73,8 @@
                 "The people who are crazy enough to think they can change the wordla, are the ones that do.",
                 "Life is what happens when you’re busy making other plans.",
                 "You only live once, but if you do it right, once is enough"];
+    var loading = ["Stamping", "Preparing", "Arranging", "Assigning"];
+    var stuff = ["Documents", "Speeches", "Placards", "Portfolios"];
     function getRandomInt(max){
         return Math.floor(Math.random() * Math.floor(max));
     }
@@ -77,6 +83,8 @@
     $('.name').html(names[n]);
     $('.position').html(positions[n]);
     $('.quote').html(quotes[n]);
+    $('.toLoad').html(loading[n]);
+    $('.toLoadStuff').html(stuff[n]);
 
     var tl = new TimelineMax({});
     tl.to(".content", 1, {opacity:1, y: 40 });
@@ -92,8 +100,8 @@
     window.addEventListener('load', function(){
         tl.to(".wrapper", 2, {xPercent: 100, ease: Power4.easeIn}, /*thisAnimationDelay:*/);
         tl.to(".moveUp", 2, {opacity: 1, y: 20, }, 2.7);
-
-    })
+    });
+    //End of loader
   </script>
 </body>
 </html>
