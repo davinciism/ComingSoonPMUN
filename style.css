@@ -158,12 +158,11 @@ body{
     position: fixed;
     bottom: 0;
     margin: 0px auto;
-    transform: translateX(-18px);
 }
 .bottom p{
     font-size: 24px;
     color: #fff;
-    margin: 0px;
+    margin: 0px auto;
     text-align: center;
 }
 .bottom p span{
